@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "clsuHwgLQKqwm7MPTCKLps1l94WcISQhpxrOEZ4i58tqNnl3D6OP/ezgiPVXkRpLVQ0mYFzKl5zWdG6kSLEc/w==",
+  "dgSpecHash": "c+zpW4XSkAtRaS3R4tn7DAOptwB4RK+SeHIrcikiKDQ94j478llmtE9Dv9XzJgYOYAJEgBEmLS0K0S6R2kebJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\eTickets\\eTickets\\eTickets.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\ecommerce-aspnet-mvc-main\\eTickets\\eTickets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

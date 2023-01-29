@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\eTickets\\eTickets\\eTickets.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\ecommerce-aspnet-mvc-main\\eTickets\\eTickets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\eTickets\\eTickets\\eTickets.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\ecommerce-aspnet-mvc-main\\eTickets\\eTickets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\eTickets\\eTickets\\eTickets.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\ecommerce-aspnet-mvc-main\\eTickets\\eTickets.csproj",
         "projectName": "eTickets",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\eTickets\\eTickets\\eTickets.csproj",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\ecommerce-aspnet-mvc-main\\eTickets\\eTickets.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\eTickets\\eTickets\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\ecommerce-aspnet-mvc-main\\eTickets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
