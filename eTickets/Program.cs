@@ -1,4 +1,5 @@
 using eTickets.Data;
+using eTickets.Data.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 var builder = WebApplication.CreateBuilder(args);
@@ -6,8 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+builder.Services.AddScoped<IActorsService, ActorsService>();
+builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
+
+builder.Services.AddControllersWithViews();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
