@@ -67,15 +67,14 @@ namespace eTickets.Controllers
             if (actorDetails == null) return View("Not Found");
             return View(actorDetails);
         }
-        [HttpPost]
-        public async Task<IActionResult> Delete(int id, [Bind("Id, ProfilePictureURL, FullName, Bio")] Actor actor)
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var actorDetails = await _service.GetByIdAsync(id);
+            if (actorDetails == null) return View("Not Found");
 
-            if (!ModelState.IsValid)
-            {
-                return View(actor);
-            }
-            await _service.UpdateAsync(id, actor);
+            await _service.DeleteAsync(id);
+            
             return RedirectToAction(nameof(Index));
         }
     }
