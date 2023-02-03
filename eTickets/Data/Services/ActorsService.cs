@@ -39,6 +39,7 @@ namespace eTickets.Data.Services
         public async Task<Actor> UpdateAsync(int id, Actor newActor)
         {
             //newActor.Id = id;
+
             _context.Update(newActor);
             await _context.SaveChangesAsync();
             return newActor;
