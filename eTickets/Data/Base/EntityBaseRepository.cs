@@ -1,4 +1,6 @@
-﻿namespace eTickets.Data.Base
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace eTickets.Data.Base
 {
     public class EntityBaseRepository<T>: IEntityBaseRepository<T> where T : class, IEntityBase, new()
     {
@@ -17,16 +19,17 @@
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var result = await _context.Set<T>().ToListAsync();
+            return result;
         }
 
-        public Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
-        }
-
+            var result = await _context.Set<T>().FirstOrDefaultAsync(n => n.id == id);
+            return result;
+        }    
         public Task<T> UpdateAsync(int id, T entity)
         {
             throw new NotImplementedException();
